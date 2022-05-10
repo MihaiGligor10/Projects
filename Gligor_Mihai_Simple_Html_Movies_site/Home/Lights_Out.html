@@ -1,0 +1,108 @@
+<!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Mon Nov 02 2020 09:08:50 GMT+0000 (Coordinated Universal Time)  -->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Lights Out</title>
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <meta content="Webflow" name="generator">
+      <link href="webflow.css" rel="stylesheet" type="text/css">
+      <link href="split-opl.webflow.css?ver=1.1" rel="stylesheet" type="text/css">
+      <style type="text/css">
+         body {
+         -webkit-font-smoothing: antialiased;
+         }      
+      </style>
+   </head>
+   <body class="body">
+      <div class="columns w-row">
+      <div class="leftcontent w-col w-col-6 w-col-stack">
+         <img src="images/Lights_Out.jpg" alt="Lights Out">
+      </div>
+      <div class="rightcontent w-col w-col-6 w-col-stack">
+         <div class="name">Horror</div>
+         <h1 class="tagline"><strong class="bold-text">Lights Out</strong></h1>
+         <p class="bio">Lights Out is a 2016 American supernatural horror film directed by David F. ... In the film, a young woman must confront her childhood fears to protect her brother from a vengeful supernatural entity holding a mysterious attachment to their mother.</p>
+
+         <div class="links w-row">
+            <div class="column w-col w-col-4" width="100%">
+               <div class="text-block-2">Rating</div>
+               <ul role="list" class="list w-list-unstyled" width="100%">
+                  <li>
+                     <!--adauga rating si sitem de rating-->
+                     <div id="myProgress">
+                        <div id="myBar">0%</div>
+                     </div>
+                  </li>
+                  <li>
+                     <!--adauga rating si sitem de rating-->
+                     <button onclick="move()">Like</button> 
+                     <br>
+                     <button onclick="move()">Dislike</button> 
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+
+         <div class="text-block-2">Add to list</div>
+         <ul role="list" class="list w-list-unstyled">
+            <li>
+               <button>Add</button> 
+            </li>
+         </ul>
+
+
+         <div class="text-block-2">Review</div>
+         <ul role="list" class="list w-list-unstyled">
+            <li>
+              <input type="text" placeholder="Write a Review " name="email" id="email" required>
+              <button type="submit" class="registerbtn">Review this movie</button>
+            </li>
+         </ul>
+         <div class="credit">©Filmento
+        </div>
+
+
+        
+        
+       <div class="text-block-2">Reviews</div>
+        <ul role="list" class="list w-list-unstyled">
+           <li>
+            <iframe src="Lights_Out_com.html" height="200" width="100%" title="Iframe Example">></iframe>
+           </li>
+        </ul>
+
+
+        
+        
+        <a href ="home.html">Back to the main page</a>
+
+
+
+      </div>
+      <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+      <script>
+         var i = 0;
+         function move() {
+           if (i == 0) {
+             i = 1;
+             var elem = document.getElementById("myBar");
+             var width = 10;
+             var id = setInterval(frame, 10);
+             var aci_ai_procentul_tau = 30;
+             function frame() {
+               if (width >= aci_ai_procentul_tau) {
+                 clearInterval(id);
+                 i = 0;
+               } else {
+                 width++;
+                 elem.style.width = width + "%";
+                 elem.innerHTML = width  + "%";
+               }
+             }
+           }
+         }
+      </script>
+   </body>
+</html>

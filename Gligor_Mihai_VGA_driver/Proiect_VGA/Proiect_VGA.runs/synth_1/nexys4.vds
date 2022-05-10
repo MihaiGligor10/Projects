@@ -1,0 +1,277 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jan 10 23:25:00 2022
+# Process ID: 12000
+# Current directory: C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.runs/synth_1
+# Command line: vivado.exe -log nexys4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nexys4.tcl
+# Log file: C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.runs/synth_1/nexys4.vds
+# Journal file: C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source nexys4.tcl -notrace
+Command: synth_design -top nexys4 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5168 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 283.426 ; gain = 73.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nexys4' [C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/sources_1/new/nexys4.vhd:19]
+INFO: [Synth 8-3491] module 'VGA' declared at 'C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/sources_1/new/VGA.vhd:7' bound to instance 'vgaPM' of component 'VGA' [C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/sources_1/new/nexys4.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/sources_1/new/VGA.vhd:19]
+INFO: [Synth 8-3491] module 'SYNC' declared at 'C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/sources_1/new/SYNC.vhd:7' bound to instance 'c1' of component 'SYNC' [C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/sources_1/new/VGA.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'SYNC' [C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/sources_1/new/SYNC.vhd:16]
+INFO: [Synth 8-4471] merging register 'g_reg[3:0]' into 'r_reg[3:0]' [C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/sources_1/new/SYNC.vhd:35]
+INFO: [Synth 8-4471] merging register 'b_reg[3:0]' into 'r_reg[3:0]' [C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/sources_1/new/SYNC.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'SYNC' (1#1) [C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/sources_1/new/SYNC.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (2#1) [C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/sources_1/new/VGA.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'nexys4' (3#1) [C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/sources_1/new/nexys4.vhd:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 320.828 ; gain = 111.273
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 320.828 ; gain = 111.273
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/constrs_1/imports/Configuratie/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/constrs_1/imports/Configuratie/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.srcs/constrs_1/imports/Configuratie/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nexys4_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nexys4_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 617.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SYNC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT2 |     3|
+|4     |LUT3 |     6|
+|5     |LUT4 |     8|
+|6     |LUT5 |     8|
+|7     |LUT6 |    21|
+|8     |FDRE |    25|
+|9     |IBUF |     1|
+|10    |OBUF |    14|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    89|
+|2     |  vgaPM  |VGA    |    73|
+|3     |    c1   |SYNC   |    73|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 617.082 ; gain = 407.527
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 617.082 ; gain = 111.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 617.082 ; gain = 407.527
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 617.082 ; gain = 407.527
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Mihai/Desktop/Desktop/Faculta/SSC/Proiect_VGA/Proiect_VGA.runs/synth_1/nexys4.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 617.082 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 10 23:25:20 2022...
